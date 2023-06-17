@@ -1,0 +1,25 @@
+{
+	"name": "fms newsletter sign-up form",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev:compile-sass": "node-sass -w ./css/sass/main.scss ./css/style.css",
+		"dev:b-sync": "browser-sync start --server --files \"index.html\" css/style.css",
+		"start": "npm-run-all --parallel dev:*"
+	},
+	"author": "Sagar",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^8.40.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.28.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"node-sass": "^8.0.0",
+		"npm-run-all": "^4.1.5"
+	}
+}
