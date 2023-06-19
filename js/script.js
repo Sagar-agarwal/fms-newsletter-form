@@ -46,13 +46,11 @@ const formSubmitHandler = (e) => {
   const emailAddress = email.value;
   const isValidEmail = isValidEmailAddress(emailAddress);
   // invalidEmailHandler(emailAddress);
-
   if (isValidEmail) {
     submitForm(emailAddress);
   } else {
     invalidEmailHandler();
   }
-
   e.preventDefault();
 };
 
