@@ -1,0 +1,16 @@
+/* --- Colors --- */
+$color-primary-red: hsl(4, 100%, 67%);
+$color-primary-pink: hsl(339, 100%, 62%);
+
+$color-grey-dark: hsl(234, 29%, 20%);
+$color-grey-charcoal: hsl(235, 18%, 26%);
+$color-grey: hsl(231, 7%, 60%);
+$color-grey-light: hsl(231, 7%, 70%);
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+
+$gradient-primary: linear-gradient(to right, $color-primary-pink, $color-primary-red);
+
+/* --------- SCREEN SIZES  --------- */
+$screen-mobile: 375px;
+$screen-desktop: 1440px;

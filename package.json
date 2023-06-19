@@ -1,12 +1,12 @@
 {
-	"name": "fms newsletter sign-up form",
+	"name": "fms_newsletter_sign_up_form",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev:compile-sass": "node-sass -w ./css/sass/main.scss ./css/style.css",
-		"dev:b-sync": "browser-sync start --server --files \"index.html\" css/style.css",
+		"dev:b-sync": "browser-sync start --server --files \"index.html\" css/style.css js/script.js",
 		"start": "npm-run-all --parallel dev:*"
 	},
 	"author": "Sagar",

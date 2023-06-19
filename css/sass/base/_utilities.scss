@@ -1,0 +1,26 @@
+.inactive {
+	display: none !important;
+}
+
+.display {
+	display: flex;
+}
+
+.hide-desktop {
+}
+
+@media screen and (min-width: $screen-desktop) {
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $screen-desktop) {
+	.hide-desktop {
+		display: none;
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}

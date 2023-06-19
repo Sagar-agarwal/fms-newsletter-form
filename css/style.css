@@ -1,0 +1,177 @@
+/* --- Colors --- */
+/* --------- SCREEN SIZES  --------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+.ani-side-by-side, .section__form .form__fill-out .email.error {
+  animation: side-by-side 0.4s ease-in-out 0.1s; }
+
+@keyframes side-by-side {
+  0% { }
+  20% {
+    transform: translateX(0.5rem); }
+  40% {
+    transform: translateX(-0.5rem); }
+  60% {
+    transform: translateX(0.5rem); }
+  80% {
+    transform: translateX(-0.5rem); }
+  100% {
+    transform: translateX(0); } }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  font-family: Roboto, Ariel, serif;
+  min-height: 100vh; }
+
+ol,
+ul {
+  list-style: none; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.inactive {
+  display: none !important; }
+
+.display, .section__form .form__fill-out .email__error.error, .section__form .form__fill-out .email.error {
+  display: flex; }
+
+@media screen and (min-width: 1440px) {
+  .hide-mobile {
+    display: none; } }
+
+@media screen and (max-width: 1440px) {
+  .hide-desktop {
+    display: none; } }
+
+.cursor-pointer, .section__form .form__fill-out .email, [class^='btn-'] {
+  cursor: pointer; }
+
+[class^='section__'] {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%; }
+
+.section__form {
+  justify-content: center;
+  align-items: center; }
+  .section__form .signup__form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .section__form .form div:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .section__form .form__details {
+    display: flex;
+    flex-direction: column; }
+    .section__form .form__details-heading {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem; }
+    .section__form .form__details-points {
+      font-size: 1.1rem; }
+    .section__form .form__details-point {
+      margin-bottom: 1rem;
+      display: flex; }
+      .section__form .form__details-point .icon {
+        padding: 0 1rem 0 0;
+        color: #ff6257; }
+  .section__form .form__fill-out {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    .section__form .form__fill-out .email__label {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem; }
+    .section__form .form__fill-out .email__error {
+      color: #ff6257;
+      font-size: 0.8rem;
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none; }
+    .section__form .form__fill-out .email {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #adafb8;
+      padding: 1rem; }
+      .section__form .form__fill-out .email, .section__form .form__fill-out .email:focus-visible {
+        border: 1px solid #adafb8;
+        outline: #adafb8; }
+      .section__form .form__fill-out .email.error {
+        border: 1px solid #ff6257;
+        color: #ff6257;
+        background-color: rgba(255, 98, 87, 0.1); }
+        .section__form .form__fill-out .email.error:focus-visible {
+          outline: #ff6257; }
+      .section__form .form__fill-out .email::placeholder {
+        color: #adafb8; }
+
+.section__success {
+  padding: 1.5rem;
+  min-height: 40rem;
+  justify-content: space-between; }
+
+.success__message {
+  margin-top: 2rem; }
+  .success__message .success__icon {
+    color: #ff6257;
+    font-size: 3.5rem;
+    margin: 0.5rem 0; }
+  .success__message .success__heading {
+    margin: 0.5rem 0; }
+  .success__message .success__detail {
+    margin: 0.5rem 0;
+    font-size: 1.2rem; }
+    .success__message .success__detail-text--email {
+      font-weight: bold; }
+
+.success__action {
+  display: flex; }
+
+[class^='btn-'] {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1rem; }
+
+.btn-submit {
+  background: #242742;
+  color: white; }
+  .btn-submit:hover {
+    background: linear-gradient(to right, #ff3d81, #ff6257); }
+
+.btn-dismiss {
+  background: #242742;
+  color: white; }
+  .btn-dismiss:hover {
+    background: linear-gradient(to right, #ff3d81, #ff6257); }
